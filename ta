@@ -1,1 +1,3 @@
+clear
 task add $1 project:$2 due:$3
+tl
