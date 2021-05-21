@@ -5,6 +5,7 @@ apt-add-repository ppa:gns3/ppa -y > server-setup.log && echo 'GNS3 PPA: [COMPLE
 
 echo 'Installing required Packages'
 apt install -y nfs-common python3-pip docker.io htop nvidia-headless-460-server htop build-essential git libssl-dev zlib1g-dev yasm pkg-config libgmp-dev libpcap-dev libbz2-dev nvidia-opencl-dev >> server-setup.log && echo 'Additional Package Installation: [COMPLETE]'
+echo 'Installing GNS3-Server (Interactively):' >> server-setup.log
 apt install -y gns3-server && echo 'Install GNS3-Server (Interactively): [COMPLETE]' >> server-setup.log
 
 echo 'Adding user: [ean] to group: [docker]'
