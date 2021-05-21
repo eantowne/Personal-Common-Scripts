@@ -18,4 +18,5 @@ mkdir /mnt/NAS && echo 'Created /mnt/NAS directory' >> server-setup.log
 echo 'Adding /etc/hosts entries:'
 su -c "echo '' >> /etc/hosts" && su -c "echo '# GNS3 Servers:' >> /etc/hosts" && su -c "echo '192.168.1.31 server-1' >> /etc/hosts" && su -c "echo '192.168.1.32 server-2' >> /etc/hosts" && su -c "echo '192.168.1.32 server-3' >> /etc/hosts" && su -c "echo '192.168.1.34 server-4' >> /etc/hosts" && echo 'Added GNS3 Servers to /etc/hosts' >> server-setup.log
 
+echo 'REBOOTING NOW!' echo 'REBOOTING' >> server-setup.log
 reboot
